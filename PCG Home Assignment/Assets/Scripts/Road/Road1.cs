@@ -55,7 +55,7 @@ public class Road1 : MonoBehaviour
 
     private void CreateCube(){
 
-        this.transform.position = new Vector3(32.5999985f,0.100000001f,-47);
+        this.transform.position = new Vector3(32.7000008f,0.100000001f,-47);
 
         MeshFilter meshFilter = this.GetComponent<MeshFilter>();
 

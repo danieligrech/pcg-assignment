@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
 
-public class Road4 : MonoBehaviour
+public class SkyscraperDoor5 : MonoBehaviour
 {
 
     [SerializeField]
@@ -42,7 +42,7 @@ public class Road4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+    
     }
 
     public Vector3 CubeSize(){
@@ -55,7 +55,7 @@ public class Road4 : MonoBehaviour
 
     private void CreateCube(){
 
-        this.transform.position = new Vector3(-65.8000031f,0.100000001f,18);
+        this.transform.position = new Vector3(-38.5999985f,5.30000019f,-32.2999992f);
 
         MeshFilter meshFilter = this.GetComponent<MeshFilter>();
 
@@ -109,6 +109,6 @@ public class Road4 : MonoBehaviour
         MaterialsBuilder materialsBuilder = new MaterialsBuilder();
 
         MeshRenderer meshRenderer = this.GetComponent<MeshRenderer>();
-        meshRenderer.materials = materialsBuilder.MaterialsListSkyscraper().ToArray();
+        meshRenderer.materials = materialsBuilder.MaterialsListDoor().ToArray();
     }
 }

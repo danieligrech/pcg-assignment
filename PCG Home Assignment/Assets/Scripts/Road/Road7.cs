@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
 
-public class Road4 : MonoBehaviour
+public class Road7 : MonoBehaviour
 {
 
     [SerializeField]
@@ -55,7 +55,7 @@ public class Road4 : MonoBehaviour
 
     private void CreateCube(){
 
-        this.transform.position = new Vector3(-65.8000031f,0.100000001f,18);
+        this.transform.position = new Vector3(11.6999998f,0.100000001f,-45.4000015f);
 
         MeshFilter meshFilter = this.GetComponent<MeshFilter>();
 
