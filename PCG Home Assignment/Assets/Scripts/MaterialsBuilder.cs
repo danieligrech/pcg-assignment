@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MaterialsBuilder
 {
-    private List<Material> materialsList = new List<Material>();
+    private List<Material> materialsListSkyscraper = new List<Material>();
+    private List<Material> materialsListBase = new List<Material>();
+    private List<Material> materialsListDoor = new List<Material>();
 
     public MaterialsBuilder()
     {
@@ -26,15 +28,39 @@ public class MaterialsBuilder
         Material whiteMaterial = new Material(Shader.Find("Specular"));
         whiteMaterial.color = Color.white;
 
-        materialsList.Add(redMaterial);
-        materialsList.Add(blueMaterial);
-        materialsList.Add(greenMaterial);
-        materialsList.Add(magentaMaterial);
-        materialsList.Add(yellowMaterial);
-        materialsList.Add(whiteMaterial);
+        Material greyMaterial = new Material(Shader.Find("Specular"));
+        greyMaterial.color = Color.grey;
+
+        Material blackMaterial = new Material(Shader.Find("Specular"));
+        blackMaterial.color = Color.black;
+
+
+        materialsListSkyscraper.Add(blackMaterial);
+        materialsListSkyscraper.Add(blackMaterial);
+        materialsListSkyscraper.Add(blackMaterial);
+        materialsListSkyscraper.Add(blackMaterial);
+        materialsListSkyscraper.Add(blackMaterial);
+        materialsListSkyscraper.Add(blackMaterial);
+
+        materialsListBase.Add(greyMaterial);
+
+        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(redMaterial);
     }
 
-    public List<Material> MaterialsList(){
-        return materialsList;
+    public List<Material> MaterialsListSkyscraper(){
+        return materialsListSkyscraper;
+    }
+
+    public List<Material> MaterialsListBase(){
+        return materialsListBase;
+    }
+
+    public List<Material> MaterialsListDoor(){
+        return materialsListDoor;
     }
 }

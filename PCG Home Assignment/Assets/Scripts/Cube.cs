@@ -107,6 +107,6 @@ public class Cube : MonoBehaviour
         MaterialsBuilder materialsBuilder = new MaterialsBuilder();
 
         MeshRenderer meshRenderer = this.GetComponent<MeshRenderer>();
-        meshRenderer.materials = materialsBuilder.MaterialsList().ToArray();
+        meshRenderer.materials = materialsBuilder.MaterialsListSkyscraper().ToArray();
     }
 }
