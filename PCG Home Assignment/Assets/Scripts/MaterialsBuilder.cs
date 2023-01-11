@@ -7,23 +7,12 @@ public class MaterialsBuilder
     private List<Material> materialsListSkyscraper = new List<Material>();
     private List<Material> materialsListBase = new List<Material>();
     private List<Material> materialsListDoor = new List<Material>();
+    private List<Material> materialsListWindow = new List<Material>();
 
     public MaterialsBuilder()
     {
-        Material redMaterial = new Material(Shader.Find("Specular"));
-        redMaterial.color = Color.red;
-
         Material blueMaterial = new Material(Shader.Find("Specular"));
         blueMaterial.color = Color.blue;
-
-        Material greenMaterial = new Material(Shader.Find("Specular"));
-        greenMaterial.color = Color.green;
-
-        Material magentaMaterial = new Material(Shader.Find("Specular"));
-        magentaMaterial.color = Color.magenta;
-
-        Material yellowMaterial = new Material(Shader.Find("Specular"));
-        yellowMaterial.color = Color.yellow;
 
         Material whiteMaterial = new Material(Shader.Find("Specular"));
         whiteMaterial.color = Color.white;
@@ -44,12 +33,19 @@ public class MaterialsBuilder
 
         materialsListBase.Add(greyMaterial);
 
-        materialsListDoor.Add(redMaterial);
-        materialsListDoor.Add(redMaterial);
-        materialsListDoor.Add(redMaterial);
-        materialsListDoor.Add(redMaterial);
-        materialsListDoor.Add(redMaterial);
-        materialsListDoor.Add(redMaterial);
+        materialsListDoor.Add(blueMaterial);
+        materialsListDoor.Add(blueMaterial);
+        materialsListDoor.Add(blueMaterial);
+        materialsListDoor.Add(blueMaterial);
+        materialsListDoor.Add(blueMaterial);
+        materialsListDoor.Add(blueMaterial);
+
+        materialsListWindow.Add(whiteMaterial);
+        materialsListWindow.Add(whiteMaterial);
+        materialsListWindow.Add(whiteMaterial);
+        materialsListWindow.Add(whiteMaterial);
+        materialsListWindow.Add(whiteMaterial);
+        materialsListWindow.Add(whiteMaterial);
     }
 
     public List<Material> MaterialsListSkyscraper(){
@@ -62,5 +58,9 @@ public class MaterialsBuilder
 
     public List<Material> MaterialsListDoor(){
         return materialsListDoor;
+    }
+
+    public List<Material> MaterialsListWindow(){
+        return materialsListWindow;
     }
 }
