@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1029082009}
   - component: {fileID: 1029082008}
   - component: {fileID: 1029082007}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heightMapImage: {fileID: 2800000, guid: 216d2ee426bee774eb693d94334f28f0, type: 3}
-  heightMapScale: {x: 2, y: 1, z: 2}
+  heightMapScale: {x: 2, y: 0.5, z: 2}
   loadHeightMap: 1
   flattenTerrainOnExit: 0
   loadHeightMapInEditMode: 0
@@ -168,9 +168,17 @@ MonoBehaviour:
   - terrainTexture: {fileID: 2800000, guid: 7e35234e281d141418972228ee38415e, type: 3}
     tileSize: {x: 20, y: 20}
     minHeight: 0.2
-    maxHeight: 1
+    maxHeight: 0.5
   addTerrainTexture: 1
   terrainTextureBlendOffset: 0.1
+  treeData:
+  - treeMesh: {fileID: 1743353957770956, guid: f41642586885949968180791f012ee81, type: 3}
+    minHeight: 0.05
+    maxHeight: 1
+  maxTrees: 100000
+  treeSpacing: 25
+  addTrees: 0
+  terrainLayerIndex: 12
 --- !u!154 &1029082008
 TerrainCollider:
   m_ObjectHideFlags: 0
