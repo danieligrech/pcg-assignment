@@ -154,10 +154,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d100f8669681eb409aef8f9caafee0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightMapImage: {fileID: 2800000, guid: cf2c8227a8ed96b44ae63119105d2902, type: 3}
+  heightMapImage: {fileID: 2800000, guid: 216d2ee426bee774eb693d94334f28f0, type: 3}
   heightMapScale: {x: 2, y: 1, z: 2}
   loadHeightMap: 1
-  flattenTerrainOnExit: 1
+  flattenTerrainOnExit: 0
+  loadHeightMapInEditMode: 0
+  flattenTerrainInEdit: 0
+  terrainTextureData:
+  - terrainTexture: {fileID: 2800000, guid: b39336e67b68db14aa4a8a7f883e5aff, type: 3}
+    tileSize: {x: 20, y: 20}
+    minHeight: 0
+    maxHeight: 0.2
+  - terrainTexture: {fileID: 2800000, guid: 7e35234e281d141418972228ee38415e, type: 3}
+    tileSize: {x: 20, y: 20}
+    minHeight: 0.2
+    maxHeight: 1
+  addTerrainTexture: 1
+  terrainTextureBlendOffset: 0.1
 --- !u!154 &1029082008
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -385,8 +398,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883403758}
-  m_LocalRotation: {x: 0.70413995, y: 0.00215593, z: -0.0021457938, w: 0.71005476}
-  m_LocalPosition: {x: 586.23206, y: 962.8108, z: 489.86218}
+  m_LocalRotation: {x: 0.00047658128, y: -0.6897042, z: 0.72409105, w: 0.00044550566}
+  m_LocalPosition: {x: 478.59863, y: 1010.0084, z: 454.54944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
